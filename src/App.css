@@ -24,15 +24,24 @@ body {
   }
 }
 .app-logo {
-  height: 30px;
-  padding-left: 40px;
+  height: 20px;
+  padding-left: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .app-logo {
+    height: 30px;
+    padding-left: 40px;
+  }
 }
 
 .input-container {
   display: flex;
-  height: 60px;
+  height: 40px;
   width: 50%;
+  margin-left: 15px;
   margin: auto;
+
   /* border: 1px solid red; */
 }
 @media screen and (min-width: 768px) {
@@ -43,8 +52,8 @@ body {
 }
 .search-logo {
   background-color: #2850a7;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
   padding-top: 10px;
   padding-bottom: 10px;
   border: 1px solid #ececec;
@@ -64,8 +73,8 @@ body {
   background-color: #2850a7;
   color: #f8fafc;
   font-family: 'Roboto';
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 12px;
+  padding-right: 12px;
   padding-top: 10px;
   padding-bottom: 10px;
   font-size: 14px;
@@ -103,24 +112,39 @@ body {
   padding: 5px;
   padding-left: 0px;
   display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .list-container {
+    display: flex;
+    flex-direction: row;
+  }
 }
 .time {
   color: #475569;
   font-size: 16px;
   font-family: 'Roboto';
   font-weight: 500;
+  margin-bottom: 5px;
 }
+
 .logo-container {
   display: flex;
   margin-left: 15px;
-  width: 90%;
+  width: 100%;
   flex-direction: row;
   /* border: 1px solid green; */
   margin: auto;
 }
+@media screen and (min-width: 768px) {
+  .logo-container {
+    width: 90%;
+  }
+}
 .logo-img {
   height: 30px;
   margin-right: 15px;
+  align-self: center;
 }
 .title {
   color: #475569;
@@ -130,6 +154,7 @@ body {
   font-weight: 500;
   align-self: center;
   margin-right: 15px;
+  margin-bottom: 0px;
 }
 .url {
   color: #475569;
